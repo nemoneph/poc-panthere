@@ -1,0 +1,49 @@
+tools:
+    php_cpd: true
+    php_analyzer:
+        enabled: true
+        config:
+            use_statement_fixes:
+                preserve_blanklines: true
+                enabled: true
+                remove_unused: true
+                preserve_multiple: false
+                order_alphabetically: false
+        extensions:
+            - php
+    php_pdepend:
+        enabled: true
+        configuration_file: null
+        suffixes:
+            - php
+    php_cs_fixer:
+        enabled: true
+        config:
+            level: psr2
+            fixers:
+                indentation: true
+                linefeed: true
+                trailing_spaces: true
+                unused_use: true
+                phpdoc_params: false
+                visibility: true
+                return: true
+                short_tag: true
+                braces: true
+                include: true
+                php_closing_tag: true
+                extra_empty_lines: true
+                controls_spaces: true
+                elseif: true
+                eof_ending: true
+        extensions:
+            - php
+    php_code_sniffer:
+        config:
+            standard: 'psr2'
+    sensiolabs_security_checker: true
+
+
+build_failure_conditions:
+    - 'issues.severity(= CRITICAL).new.exists'
+    - 'elements.rating(<= D).new.exists'
