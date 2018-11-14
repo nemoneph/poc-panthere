@@ -3,7 +3,8 @@ build:
     analysis:
       dependencies:
         before:
-          - echo "-----BEGIN CERTIFICATE-----
+          - echo "
+            -----BEGIN CERTIFICATE-----
             MIIEizCCA3OgAwIBAgIQCQ7oxd5b+mLSri/3CXxIVzANBgkqhkiG9w0BAQsFADBh
             MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3
             d3cuZGlnaWNlcnQuY29tMSAwHgYDVQQDExdEaWdpQ2VydCBHbG9iYWwgUm9vdCBH
