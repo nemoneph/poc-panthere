@@ -29,5 +29,5 @@ build:
             h4V9FwHOfphdMXOxi14OqmsiTbc5cOs9/uukH+YVsuFdWTna6IVw1qh+tEtyH16R
             vmi7pkqyZYULOPMIE7avrljVVBZuikwARtY8tCVV6Pp9l3VeagBqb2ffgqNJt3C0
             TYNYQI+BXG1R1cABlold
-            -----END CERTIFICATE-----" > /tmp/fidicual.crt
+            -----END CERTIFICATE-----" > /tmp/fiducial.crt
           - yes | sudo keytool -import -v -trustcacerts -alias fiducial -file /tmp/fiducial.crt -keystore /usr/lib/jvm/java-8-oracle/jre/lib/security/cacerts -keypass changeit -storepass changeit
